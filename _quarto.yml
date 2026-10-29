@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  page-footer:
+    background: light
+    center: "<p><a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>&copy; 2026, CC BY-NC-SA 4.0.</a></p>"
+    right: "<p>Escrito em <a href='https://quarto.org/'>Quarto</a></p>"
+  title: "Curso de física"
+  navbar:
+    left:
+      - text: Curso
+        menu:
+          - text: Básico
+            href: curso/basico/basico.qmd
+          - text: Avançado
+            href: curso/avancado/avancado.qmd
+          - text: Física quântica
+            href: curso/quantica/quantica.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/flavianowilliams/education
+
+format:
+  html:
+    page-layout: full
+    toc: false
+    grid:
+      sidebar-width: 300px
+      body-width: 1000px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    theme: flatly.scss
+    css: styles.css
+csl: abnt.csl
+lang: "pt-BR"
+date-format: DD/MM/YYYY
+
+execute:
+  freeze: auto

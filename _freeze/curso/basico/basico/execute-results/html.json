@@ -1,0 +1,17 @@
+{
+  "hash": "d26b8d289f8bdb37b4f3512d8183703e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Fisica básica\"\nauthor: \"Flaviano Williams Fernandes\"\n---\n\n| Tópico                             |\n|:------:|--------|---------|--------|\n| [Vetores](/curso/basico/vetores/vetores-EM.pdf) |\n| [Conservação do momento linear](/curso/basico/conservacao_do_momento/index.html) |\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# library(kableExtra)\n# \n# dados <- read.csv(file = here::here(\"dados/aulas.csv\"))\n# \n# #dados[, \"material\"] <- lapply(dados[, \"material\"], \\(x) glue::glue(\"<a href='{x}'></a>\"))\n# \n# kable(x = dados, \n#              col.names = c(\"Título\", \"Conceitos\", \"Material\", \"Dashboard\", \"Videoaulas\"),\n#              align = \"lccc\",\n#              format = \"html\",\n#              escape = FALSE\n#              ) |> \n#   column_spec(3, link = dados$material) |> \n#   kable_classic()\n```\n:::\n\n\n",
+    "supporting": [
+      "basico_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

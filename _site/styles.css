@@ -1,0 +1,29 @@
+/* css styles */
+figcaption {
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  text-align:justify;
+}
+
+alerta {
+  color:red;
+}
+
+.nav-footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}

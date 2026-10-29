@@ -1,0 +1,15 @@
+{
+  "hash": "041d02ecf6637eec7c4df2c9dbb2b953",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Vetores\"\nauthor: \"Flaviano Williams Fernandes\"\ndate: \"2026-10-29\"\ndate-modified: today\ncategories: [basico]\n---\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
