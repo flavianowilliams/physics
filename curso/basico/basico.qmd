@@ -4,7 +4,9 @@ author: "Flaviano Williams Fernandes"
 tbl-colwidths: [10,30,5,5,5,5,5,5,5,5]
 ---
 
-| Tópico   | Aula     | Slides | Videoaulas |
-|:--------:|:---------|:------:|:----------:|
-| Mecânica | Medições | [PDF](/curso/basico/medicoes/medicoes-EM.pdf)   ||
-| Mecânica | Vetores  | [PDF](/curso/basico/vetores/vetores-EM.pdf)     |[1](https://youtu.be/Mjff1f2yCi8) e [2](https://youtu.be/Wv98LNBFK-c)|
+# Mecânica
+
+| Aula     | Slides | Videoaulas |
+|:---------|:------:|:----------:|
+| Medições | [PDF](/curso/basico/medicoes/medicoes-EM.pdf)   ||
+| Vetores  | [PDF](/curso/basico/vetores/vetores-EM.pdf)     |[1](https://youtu.be/Mjff1f2yCi8) e [2](https://youtu.be/Wv98LNBFK-c)|
