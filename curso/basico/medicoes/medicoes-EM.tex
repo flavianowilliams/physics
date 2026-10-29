@@ -1,0 +1,529 @@
+% Aula de mecânica dos fluidos para o curso de Física II do ensino médio
+%
+\documentclass[brazil,aspectratio=169]{beamer}
+%
+%carregando preâmbulo
+\input{../../contrib/preamble}
+
+%Título
+
+\title[Mecânica-MED]{Medições}
+
+% The main document
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+  \tableofcontents
+\end{frame}
+
+\section{Ordem de grandeza}
+
+\subsection{}
+
+\begin{frame}{Por que usamos potências da base 10?}
+	No estudo da Física encontraremos grandezas muito pequenas ou muito grandes. Como por exemplo, ao medir o tamanho de um átomo encontraremos um valor igual a \alert{0,0000000001 m}, e apenas uma célula com tamanho da ordem de \alert{0,0000001 m} pode possuir cerca de \alert{2000000000000 átomos}.
+	\linebreak
+	\linebreak
+	Uma técnica eficiente para efetuar cálculos com esses números é representá-los em forma de potência de 10, pois assim permite várias vantagens, como
+	\begin{enumerate}
+		\item [\ding{51}] tornar a notação mais compacta e simples de ler;
+		\item [\ding{51}] permite uma rápida comparação desses números entre si;
+		\item [\ding{51}] facilita a realização de operações matemáticas.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Notação científica}
+	Um número qualquer pode ser expresso como o produto de um número (n) que seja maior ou igual a 1 menor do que 10, por uma potência de 10 com expoente (m) adequado,
+	\begin{align*}
+		n\cdot 10^m
+	\end{align*}
+ou na forma
+	\begin{align*}
+		n\times 10^m
+	\end{align*}
+	\begin{exampleblock}{Exemplo}
+		\begin{equation*}
+			6\; 590\; 000\; 000\; 000\; 000,0 = \SI{6,59e15}{}		
+		\end{equation*}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Transformando um número em notação científica}
+		\begin{enumerate}[leftmargin=1.75cm]
+			\item[Passo 1:] Escrever o número incluindo a vírgula.
+			\item[Passo 2:] Andar com a vírgula até que somente reste um número diferente de zero no lado esquerdo.
+			\item[Passo 3:] Colocar no expoente da potência de 10 o número de casas decimais que tivemos que "andar" com a vírgula. Se ao andar com a vírgula o valor do número diminuiu, o expoente ficará positivo, se aumentou o expoente ficará negativo.
+		\end{enumerate}
+	\begin{exampleblock}{Exemplo}
+		\begin{equation*}
+			6\; 590\; 000\; 000\; 000\; 000,0 = \SI{6,59e15}{}		
+		\end{equation*}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Ordem de grandeza e os prefixos}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{enumerate}
+				\item[\ding{51}] Ordem de grandeza de um número é a potência de 10 mais próxima desse número;
+				\item[\ding{51}] A ordem de grandeza também pode ser expressa em prefixos (veja a tabela ao lado).
+			\end{enumerate}
+			\begin{exampleblock}{Alguns exemplos}
+				\begin{enumerate}
+					\item [\ding{51}] Raio da Via Láctea: $10^{26}$ m;
+					\item [\ding{51}] Idade do universo: $10^{18}$ s;
+					\item [\ding{51}] Massa do Sol: $10^{30}$ kg.
+				\end{enumerate}
+			\end{exampleblock}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{table}
+				\caption*{\footnotesize Notação científica descrita por prefixos.}
+				\begin{tabular}[c]{ccc}
+					\hline
+					exa & E & $10^{18}$\\
+					peta & P & $10^{15}$\\
+					tera & T & $10^{12}$\\
+					giga & G & $10^9$\\
+					mega & M & $10^6$\\
+					quilo& k & $10^3$\\
+					hecto& h & $10^2$\\
+					deca & da & $10^1$\\
+					$\vdots$& $\vdots$ & $\vdots$\\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Sistema métrico}
+
+\subsection{}
+
+\begin{frame}{Grandezas físicas}
+	Uma grandeza física é uma entidade física de um objeto que pode ser determinada quantitativamente (\alert{mensurada}) e qualitativamente (\alert{conceitualmente}).
+	\begin{enumerate}
+		\item [\ding{51}] Para investigar as leis que governam os fenômenos naturais, os cientistas devem realizar medidas das grandezas físicas envolvidas;
+		\item[\ding{51}] Para efetuar medidas é necessário escolher uma unidade de medida para cada grandeza, onde o valor é tomado em relação a um padrão de referência.
+	\end{enumerate}
+	\begin{exampleblock}{Exemplo de grandeza física}
+		\begin{equation*}
+			\text{Tempo} = 20\; \text{segundos}
+		\end{equation*}
+		\begin{enumerate}
+			\item [\ding{51}] Qualitativamente dizemos que o tempo é a duração de um evento ou fato;
+			\item [\ding{51}] Quantitativamente dizemos que o tempo pode ser 20 segundos, onde segundo é a unidade de medida.
+		\end{enumerate}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Grandezas fundamentais e derivadas}
+	Na natureza existe uma infinidade de grandezas físicas. Felizmente, não são todas independentes, ou seja, a maioria possui uma dependência com certas grandezas que chamamos de fundamentais. Assim foram escolhidas grandezas, por exemplo \alert{comprimento} e \alert{tempo}, como fundamentais e definidas a partir de um padrão universal, e cada uma foi associada uma unidade de medida. Outras grandezas são definidas a partir das fundamentais e são chamadas de grandezas derivadas.
+	\begin{exampleblock}{Exemplo de grandeza derivada}
+		\begin{equation*}
+			\overbracket{\text{velocidade}}^{\alert{\text{derivada}}} = \frac{\overbracket{\text{comprimento}}^{\alert{\text{fundamental}}}}{\underbracket{\text{Tempo}}_{\alert{\text{fundamental}}}}
+		\end{equation*}
+	\end{exampleblock}\end{frame}
+
+\begin{frame}{Origem histórica das medições}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			Antigamente as medições (unidades de medida) eram definidas de maneira bem arbitrária, e variava muito de um lugar para o outro. Como exemplo, as pessoas tomavam como padrão de referência partes do corpo, como o pé, polegada, jarda, etc. Isso dificultava muito as transações comerciais, pois esses valores mudavam de pessoa para pessoa.
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+			\centering
+			\begin{figure}
+				\includegraphics[scale=0.6]{figuras/sistema_metrico.jpg}
+				\caption*{\footnotesize Medições de volume, massa e comprimento feitos antes da adoção de um padrão universal \cite{sistemametrico}.}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{O sistema métrico decimal}
+	As inconveniências econômicas que surgiram na França relacionadas a medições erradas, em 1789 desde a Revolução Francesa foi adotado um modelo formado por um conjunto de padrões considerado universal. Esse modelo foi chamado de sistema métrico decimal.
+	
+	Principais características de um sistema métrico:
+	\begin{enumerate}
+		\item[\ding{51}] O sistema é decimal, onde o valor pode ser representado por seus múltiplos e submúltiplos;
+		\item[\ding{51}] Múltiplos e submúltiplos são representados por prefixos gregos e latinos. Exemplo: quilo = $10^3$, mili = $10^{-3}$.
+		\item[\ding{51}] O padrão para medir o comprimento é o metro, que desde 1983 passou a ser definido como o comprimento do trajeto percorrido pela luz no vácuo durante 1/299792458 segundo.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{O sistema internacional de unidades}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			A partir de 1971, o sistema métrico foi redefinido e foram selecionadas como fundamentais sete grandezas físicas para constituir o Sistema Internacional de Unidades (SI). A intenção era que este sistema fosse adotado por todos os países, sem exceção. Entretanto, alguns países como Myammar, Libéria e Estados Unidos ficaram relutantes em segui-lo, preferindo adotar o seu próprio sistema.
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+			\begin{table}
+				\begin{tabular}{ccc}
+					Grandeza & Unidade & Símbolo\\
+					\hline
+					Comprimento & metro & m\\
+					Massa & quilograma & kg\\
+					Tempo & segundo & s\\
+					Corrente elétrica & Ampere & A\\
+					Temperatura & Kelvin & K\\
+					Matéria & mol & mol\\
+					Intensidade & candela & cd\\
+					\hline
+				\end{tabular}
+				\caption*{\footnotesize Unidades fundamentais do SI.}
+			\end{table}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Mudança de um sistema de unidades para outro}
+	Muitas vezes, precisamos mudar as unidades nas quais uma grandeza física está expressa, o que pode ser feito usando um método conhecido como conversão em cadeia. Nesse método, multiplicamos o valor original por um \alert{fator de conversão}.
+	\begin{exampleblock}{Exemplo de fator de conversão}
+		Sabemos que 1 minutos corresponde ao mesmo valor de 60 segundos, portanto para converter o valor de minuto para segundo devemos multiplicar o valor correspondente pelo fator de conversão 60,
+		\begin{equation*}
+			1 min = \underbracket{60}_{\alert{\text{fator de}} \atop \alert{\text{conversão}}} s
+		\end{equation*}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Conversão de unidades em uma dimensão}
+	\begin{figure}
+		\begin{tikzpicture}[scale=0.65,transform shape,font=\Large]
+		
+		\tkzInit[xmin=-2,xmax=17,ymin=-6,ymax=3]
+		%\tkzGrid[color=gray!20]
+		\tkzClip
+		
+		\tikzset{compass style/.append style={->}}
+		
+		\foreach \x in {1,2,...,6}{
+			\tkzDefPoint(\x*3-3,0){\x}
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(20,160)
+			\node at (\x*3-3,2) {$\times 10^{1}$};
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(200,340)
+			\node at (\x*3-3,-2) {$\times 10^{-1}$};}
+		
+		\tkzDefPoints{-1.5/0/p1,1.5/0/p2,4.5/0/p3,7.5/-0.2/p4,10.5/0/p5,13.5/0/p6,16.5/0/p7}
+		
+		\tkzText(p1){m\_}
+		\tkzText(p2){c\_}
+		\tkzText(p3){d\_}
+		\tkzText(p4){\_}
+		\tkzText(p5){da\_}
+		\tkzText(p6){h\_}
+		\tkzText(p7){k\_}
+		
+		%exemplos
+		
+		\tkzText(3,-3.5){$1\;\text{mm}=1\times 10^{(-1)\times\alert{2}}\;\text{dm}\rightarrow 1\times 10^{-2}\;\text{dm}$}
+		\tkzText(3.1,-4.5){$2,5\;\text{kg}=2,5\times 10^{(1)\times\alert{6}}\;\text{mg}\rightarrow2,5\times 10^{6}\;\text{mg}$}
+		\tkzText(2.5,-5.5){$10\;\text{ms}=10\times 10^{(-1)\times\alert{3}}\;\text{s}\rightarrow 10\times 10^{-3}\;\text{s}$}
+		
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Conversão de unidades em duas dimensões}
+	\begin{figure}
+		\begin{tikzpicture}[scale=0.65,transform shape,font=\Large]
+	
+		\tkzInit[xmin=-2,xmax=17,ymin=-6,ymax=3]
+		%\tkzGrid[color=gray!20]
+		\tkzClip
+	
+		\tikzset{compass style/.append style={->}}
+	
+		\foreach \x in {1,2,...,6}{
+			\tkzDefPoint(\x*3-3,0){\x}
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(20,160)
+			\node at (\x*3-3,2) {$\times 10^{2}$};
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(200,340)
+			\node at (\x*3-3,-2) {$\times 10^{-2}$};}
+	
+		\tkzDefPoints{-1.5/0/p1,1.5/0/p2,4.5/0/p3,7.5/0/p4,10.5/0/p5,13.5/0/p6,16.5/0/p7}
+	
+		\tkzText(p1){$\text{m}\_^2$}
+		\tkzText(p2){$\text{c}\_^2$}
+		\tkzText(p3){$\text{d}\_^2$}
+		\tkzText(p4){$\_^2$}
+		\tkzText(p5){$\text{da}\_^2$}
+		\tkzText(p6){$\text{h}\_^2$}
+		\tkzText(p7){$\text{k}\_^2$}
+	
+		%exemplos
+	
+		\tkzText(3.3,-3.5){$1\;\text{mm}^2=1\times 10^{(-2)\times\alert{2}}\;\text{dm}^2\rightarrow 1\times 10^{-4}\;\text{dm}^2$}
+		\tkzText(3.6,-4.5){$2,5\;\text{m}^2=2,5\times 10^{(2)\times\alert{3}}\;\text{mm}^2\rightarrow2,5\times 10^{6}\;\text{mm}^2$}
+		\tkzText(3,-5.5){$10\;\text{ms}^2=10\times 10^{(-2)\times\alert{3}}\;\text{s}^2\rightarrow 10\times 10^{-6}\;\text{s}^2$}
+	
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Conversão de unidades em três dimensões}
+	\begin{figure}
+		\begin{tikzpicture}[scale=0.65,transform shape,font=\Large]
+	
+		\tkzInit[xmin=-2,xmax=17,ymin=-6,ymax=3]
+		%\tkzGrid[color=gray!20]
+		\tkzClip
+	
+		\tikzset{compass style/.append style={->}}
+	
+		\foreach \x in {1,2,...,6}{
+			\tkzDefPoint(\x*3-3,0){\x}
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(20,160)
+			\node at (\x*3-3,2) {$\times 10^{3}$};
+			\tkzDrawArc[R,line width=1.0pt](\x,1.5 cm)(200,340)
+			\node at (\x*3-3,-2) {$\times 10^{-3}$};}
+	
+		\tkzDefPoints{-1.5/0/p1,1.5/0/p2,4.5/0/p3,7.5/0/p4,10.5/0/p5,13.5/0/p6,16.5/0/p7}
+	
+		\tkzText(p1){$\text{m}\_^3$}
+		\tkzText(p2){$\text{c}\_^3$}
+		\tkzText(p3){$\text{d}\_^3$}
+		\tkzText(p4){$\_^3$}
+		\tkzText(p5){$\text{da}\_^3$}
+		\tkzText(p6){$\text{h}\_^3$}
+		\tkzText(p7){$\text{k}\_^3$}
+	
+		%exemplos
+	
+		\tkzText(3.3,-3.5){$1\;\text{mm}^3=1\times 10^{(-3)\times\alert{2}}\;\text{dm}^3\rightarrow 1\times 10^{-6}\;\text{dm}^3$}
+		\tkzText(3.6,-4.5){$2,5\;\text{m}^3=2,5\times 10^{(3)\times\alert{3}}\;\text{mm}^3\rightarrow2,5\times 10^{9}\;\text{mm}^3$}
+		\tkzText(3.5,-5.5){$2,5\;\text{km}^3=2,5\times 10^{(3)\times\alert{6}}\;\text{mm}^3\rightarrow2,5\times 10^{18}\;\text{mm}^3$}
+
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\section{Algarismos significativos}
+
+\subsection{}
+
+\begin{frame}{O que são algarismos significativos}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			Vimos que toda grandeza física é mensurável e seu valor quantitativo é obtido através de um instrumento de medição. Entretanto, no ato da medição o valor encontrado traz consigo erros que está diretamento associado a precisão do seu equipamento de medida. Algarismo significativo é o valor que se obtém comparando-se o objeto com o padrão da grandeza (dizemos que são algarismos significativos os números que temos plena certeza mais um duvidoso.)
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+			Em uma medida o zero à esquerda não é significativo, pois seu papel é apenas ancorar a vírgula. Entretanto, zeros à direita devem ser considerados, pois fixa a exatidão da medida.
+			\begin{align*}
+				\underbracket{3}_{\text{exato}},\underbracket{2}_{\text{duvidoso}}\;\text{cm} & \quad\left(\text{2 a.s.}\right),\\
+				\underbracket{3}_{\text{exato}},\underbracket{0}_{\text{duvidoso}}\;\text{cm} & \quad\left(\text{2 a.s.}\right),\\
+				0,\underbracket{2}_{\text{duvidoso}}\;\text{cm} & \quad\left(\text{1 a.s.}\right).
+			\end{align*}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Representação de um algarismo significativo}
+	\begin{columns}
+		\begin{column}[c]{0.6\textwidth}
+			Na figura abaixo temos total certeza que o tamanho da peça é de pelo menos 60 mm (valor exato), e poderíamos dizer que também há uma incerteza de cerca de mais ou menos 0,5 mm a mais, pois o limite da peça está mais ou menos no meio de 60 e 61 mm. Assim, poderíamos representar o seu valor como 60,5 mm. o segundo número (2) seria o algarismo duvidoso e 3 o exato.
+			\begin{corollary}
+				A mudança na unidade \alert{NÃO} poderá alterar a quantidade de algarismos significativos. Exemplo: 60,5 mm = 6,05 cm (3 a. s.).
+			\end{corollary}
+		\end{column}
+		\begin{column}[c]{0.4\textwidth}
+			\begin{figure}
+				\includegraphics[scale=0.5]{figuras/medicao-regua.jpeg}
+				\caption*{\footnotesize Medida da largura de uma peça feito por uma régua. O tamanho da peça está entre 60 e 61 mm.}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Instrumentos de medida e sua precisão}
+	\begin{columns}
+		\begin{column}[b]{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[scale=0.5]{figuras/medicao-regua.jpeg}
+				\caption*{\footnotesize No caso da régua que possui uma precisão de 1 mm, podemos dizer que a sua incerteza é menor que 1 mm. Neste caso teremos valores do tipo 1,1 mm, 60,0 mm, etc.}
+			\end{figure}
+		\end{column}
+		\begin{column}[b]{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[scale=0.49]{figuras/medicao-paquimetro.jpeg}
+				\caption*{\footnotesize Ao utilizar instrumentos, como o paquímetro que possui a precisão de 0,02 mm, a medição da peça irá coincidir com as marcações do instrumento e a sua incerteza será a precisão do equipamento.}
+			\end{figure}
+\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Regra de arredondamento}
+	Ao aplicar operações matemáticas com valores envolvendo algarismos significativos devemos fazer aproximações, implicando inevitavelmente em erros de aproximação. Contudo, o resultado obtido após a operação não deve refletir uma precisão maior que aquele medido através do seu instrumento. Portanto, devemos aplicar regras de arredondamento com esse fim.
+	\begin{enumerate}
+		\item [\ding{51}] Se $x\ge 5$, onde x é o numéro de influência, arredonde para cima.
+		\begin{equation*}
+			(1,\underbracket{5}_{\text{a.d.}}\underbracket{5}_{\text{x}}7 = 1,6)\quad (6,2\underbracket{3}_{\text{a.d.}}\underbracket{7}_{\text{x}} = 6,24)\quad (2,12\underbracket{5}_{\text{a.d.}}\underbracket{6}_{\text{x}}7 = 2,126)
+		\end{equation*}
+		\item[\ding{51}] Se $x<5$, onde x é o numéro de influência, o valor é mantido.
+		\begin{equation*}
+			(1,\underbracket{5}_{\text{a.d.}}\underbracket{4}_{\text{x}}7 = 1,5)\quad (6,2\underbracket{3}_{\text{a.d.}}\underbracket{1}_{\text{x}} = 6,23)\quad (2,12\underbracket{5}_{\text{a.d.}}\underbracket{2}_{\text{x}}7 = 2,125)
+		\end{equation*}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Operações envolvendo dois algarismos significativos}
+	\begin{enumerate}
+		\item [\ding{51}] Em operações envolvendo adição e subtração, o resultado não deve conter mais dígitos após a vírgula do que o valor com menos dígitos após a vírgula.
+		\begin{align*}
+			4,371+\alert{302,5} = 306,871\approx 306,9\quad\text{(1 algarismo após a virgula)}
+		\end{align*}
+		\item[\ding{51}] Em operações envolvendo multiplicação e divisão, o resultado não deve conter mais algarismos significativos do que o fator menos preciso.
+		\begin{equation*}
+			3,142:\alert{8,05} = 0,39031\approx 0,390\quad\text{(3 algarismos significativos)}
+		\end{equation*}
+	\end{enumerate}
+	Dessa maneira podemos ver que o erro permanece apenas no algarismo duvidoso, preservando os algarismos exatos.
+\end{frame}
+
+\begin{frame}{Operações envolvendo apenas algarismo significativo}
+	Em operações envolvendo apenas um algarismo significativo, como potenciação, radiciação, logaritmação, funções trigonométricas, etc, o resultado arredondado deve manter o número de algarismos significativos do valor anterior.
+	\begin{align*}
+		\sqrt{148,51} & = 12,18646791 \approx 12,186\quad\text{(5 algarismos significativos)},\\
+		(12,186)^2 & = 148,498595 \approx 148,50\quad\text{(5 algarismos significativos)}
+	\end{align*}
+	Dessa maneira podemos ver que o erro permanece apenas no algarismo duvidoso, preservando os algarismos exatos.
+	\begin{corollary}
+		Ao realizar qualquer operação matemática, grande atenção deverá ser dada ao tratar as unidades de medida de cada grandeza física envolvida na operação.
+	\end{corollary}
+\end{frame}
+
+\section{Incerteza na medição}
+
+\subsection{}
+
+\begin{frame}{Representação de um valor medido}
+	Definimos valor verdadeiro aquele obtido através de um processo de medida exato e o resultado comparado com a unidade padrão. Entretanto, toda medida traz consigo erros intrínsecos, cujas causas são as mais variadas. Portanto, qualquer resultado deve sempre ser representado ao lado do seu valor medido a incerteza na medição,
+	\begin{equation*}
+		\text{(Resultado)} = \text{(Valor)} \pm \text{(Incerteza)}.
+	\end{equation*}
+	O sinal $pm$ significa que o erro pode contribuir tanto positivamente quanto negativamente. Como exemplo, imaginemos que ao medir a massa \textbf{m} de um objeto encontramos um valor de 3g e uma incerteza de 0,5g, assim a completa representação do valor seria
+	\begin{equation*}
+		m = (3\pm 0,5)\;g
+	\end{equation*}
+	Isso quer dizer que o valor provável da massa m pode estar entre 2,5g a 3,5g.
+\end{frame}
+
+\begin{frame}{Valor médio}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			Considere que numa segunda-feira medimos a massa m de um objeto e encontramos o valor de 2,5g. Na terça tentamos medir novamente e encontramos outro valor de 3,0g, e na quarta outro valor de 3,5g. Podemos ver que por algum motivo o valor está variando entre 2,5g e 3,5g, o que causa uma incerteza de 0,5g para cima e para baixo. 
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+			Agora, como obter a medida mais provável, uma vez que ela está mudando a cada medida. Um método bastante eficaz é representar o seu valor médio $<m>$, onde 
+			\begin{align*}
+				<m> & = \frac{2,5g+3,0g+3,5g}{3},\\
+				<m> & = 3g
+			\end{align*}
+		\end{column}
+	\end{columns}
+	\begin{block}{Valor médio}
+		Definimos valor médio ou média como a somatória dos valores dividido pelo número de medidas.
+	\end{block}
+\end{frame}
+
+\begin{frame}{Incerteza na medição}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			Agora, como podemos obter a interteza na medição de N medidas, que também chamamos de intervalo de confiança? Uma estratégia é utilizar a seguinte fórmula abaixo, chamado erro padrão ou desvio padrão,
+			\begin{align*}
+				\Delta s = \sqrt{\frac{\sum(<m>-m)^2}{N-1}},
+			\end{align*}
+			onde
+			\begin{align*}
+				m = <m>\pm \Delta s.
+			\end{align*}
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+			\begin{table}
+				\small
+%				\caption{\footnotesize Valores calculados para três medidas.}
+				\begin{tabular}{ccc}
+					\hline
+					Medida & Valor (g) & $(<m>-m)^2$ ($g^2$)\\
+					\hline
+					1 & 2,5 & 0,25 \\
+					2 & 3,0 & 0,00 \\
+					3 & 3,5 & 0,25 \\
+					\hline
+				\end{tabular}
+			\end{table}
+			O desvio padrão calculado foi 0,5 g, o que dá o seguinte resultado,
+			\begin{align*}
+				m = (3,0\pm 0,5)\;g
+			\end{align*}
+			\alert{O número de casas decimais no desvio padrão deve corresponder ao número de casas decimais do valor médio.}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Apêndice}
+
+\subsection{}
+
+\begin{frame}{Alfabeto grego}
+	\begin{columns}
+		\begin{column}[c]{0.5\textwidth}
+			\begin{table}
+				\begin{tabular}[c]{ccc}
+					Alfa & $A$ & $\alpha$\\
+					Beta & $B$ & $\beta$\\
+					Gama & $\Gamma$ & $\gamma$\\
+					Delta & $\Delta$ & $\delta$\\
+					Epsílon & $E$ & $\epsilon$,$\varepsilon$\\
+					Zeta & $Z$ & $\zeta$\\
+					Eta & $H$ & $\eta$\\
+					Teta & $\Theta$ & $\theta$\\
+					Iota & $I$ & $\iota$\\
+					Capa & $K$ & $\kappa$\\
+					Lambda & $\Lambda$ & $\lambda$\\
+					Mi & $M$ & $\mu$
+				\end{tabular}
+			\end{table}
+		\end{column}
+		\begin{column}[c]{0.5\textwidth}
+	\begin{table}
+		\begin{tabular}[c]{ccc}
+			Ni & $N$ & $\nu$\\
+			Csi & $\Xi$ & $\xi$\\
+			ômicron & $O$ & $o$\\
+			Pi & $\Pi$ & $\pi$\\
+			Rô & $P$ & $\rho$\\
+			Sigma & $\Sigma$ & $\sigma$\\
+			Tau & $T$ & $\tau$\\
+			Ípsilon & $\Upsilon$ & $\upsilon$\\
+			Fi & $\Phi$ & $\phi$,$\varphi$\\
+			Qui & $X$ & $\chi$\\
+			Psi & $\Psi$ & $\psi$\\
+			Ômega & $\Omega$ & $\omega$
+		\end{tabular}
+	\end{table}
+\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Referências e observações\footnote{Este material está sujeito a modificações. Recomenda-se acompanhamento permanente.}}
+	\bibliographystyle{jurabib}
+	\begin{thebibliography}{9}
+		\bibitem{alvarenga}A. Máximo, B. Alvarenga, C. Guimarães, Física. Contexto e aplicações, v.1, 2.ed., São Paulo, Scipione (2016)
+		\bibitem{sistemametrico} \url{https://sistemametricodecimal.wordpress.com/2016/07/12/objetivos/}
+	\end{thebibliography}
+
+\vspace*{1cm}
+\begin{center}
+	Esta apresentação está disponível para download no endereço\\
+	\href{https://flavianowilliams.github.io/education}{\textcolor{blue}{https://flavianowilliams.github.io/education}}
+\end{center}
+
+\end{frame}
+
+\end{document}

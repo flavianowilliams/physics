@@ -3,7 +3,7 @@ title: "Física básica"
 author: "Flaviano Williams Fernandes"
 ---
 
-| Tópico                             |
-|:------:|--------|---------|--------|
-| [Vetores](/curso/basico/vetores/vetores-EM.pdf) |
-| [Conservação do momento linear](/curso/basico/conservacao_do_momento/index.html) |
+| Tópico   | Aula     | Slides | Videoaulas |
+|:--------:|:---------|:------:|:----------:|
+| Mecânica | Medições | [PDF](/curso/basico/medicoes/medicoes-EM.pdf)   ||
+| Mecânica | Vetores  | [PDF](/curso/basico/vetores/vetores-EM.pdf)     |[1](https://youtu.be/Mjff1f2yCi8), [2](https://youtu.be/Wv98LNBFK-c)|
